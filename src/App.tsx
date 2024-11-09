@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { ActivityIndicator, Image, Text, View } from "react-native";
 import {
     Poppins_300Light,
     Poppins_400Regular,
@@ -13,7 +12,7 @@ import { DMSerifDisplay_400Regular_Italic } from "@expo-google-fonts/dm-serif-di
 import { ThemeProvider } from "styled-components/native";
 import * as SplashScreen from "expo-splash-screen";
 
-import theme from "../src/styles/theme";
+import COLORS from "../src/styles/theme";
 import { StatusBar } from "expo-status-bar";
 import Login from "./screens/Login";
 
@@ -38,12 +37,8 @@ export default function App() {
     }
 
     return (
-        <ThemeProvider theme={theme}>
-            <StatusBar 
-                translucent 
-                style="dark" 
-                backgroundColor="transparent"
-            />
+        <ThemeProvider theme={COLORS}>
+            <StatusBar translucent style="dark" backgroundColor="transparent" />
             <Login />
         </ThemeProvider>
     );

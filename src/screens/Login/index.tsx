@@ -1,11 +1,35 @@
-import React from 'react';
-import { Container } from './styles';
-import { Text } from 'react-native';
+import React from "react";
+
+import {
+    Container,
+    Title,
+    Description,
+    ViewButton,
+    ContentHeader,
+    ContentBody,
+    ContentFooter,
+} from "./styles";
+import { SafeAreaView, Text } from "react-native";
+import { ButtonSocialGoogle } from "@src/components/ButtonSocialGoogle";
 
 export default function Login() {
-    return(
+    return (
         <Container>
-            <Text>Tela de login</Text>
+            <SafeAreaView>
+                <ContentHeader>
+                    <Title>Seja Bem Vindo(a) {"\n"} a App de Cateira</Title>
+                    <Description>Entra com rede sociais</Description>
+                    <ViewButton>
+                        <ButtonSocialGoogle />
+                    </ViewButton>
+                </ContentHeader>
+
+                <ContentBody></ContentBody>
+
+                <ContentFooter></ContentFooter>
+            </SafeAreaView>
         </Container>
-    )
+    );
 }
+
+export { Login };
