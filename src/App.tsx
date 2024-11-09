@@ -15,6 +15,7 @@ import * as SplashScreen from "expo-splash-screen";
 
 import theme from "../src/styles/theme";
 import { StatusBar } from "expo-status-bar";
+import Login from "./screens/Login";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -43,9 +44,7 @@ export default function App() {
                 style="dark" 
                 backgroundColor="transparent"
             />
-            <View>
-                <Text>Hello, World!</Text>
-            </View>
+            <Login />
         </ThemeProvider>
     );
 }
