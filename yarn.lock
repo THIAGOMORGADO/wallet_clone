@@ -745,6 +745,21 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@expo-google-fonts/dm-sans@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/dm-sans/-/dm-sans-0.2.3.tgz#02e143be5dc103cc6b9f70519fcc19b5676cf3e6"
+  integrity sha512-sMrW6bc3ZWg5tyasDe6GB56N1/q/wY5zjMFp1vnA61MUX19mVd62ZiiubDaroSsQIhKEJvRW662NjDGUkqmEmg==
+
+"@expo-google-fonts/dm-serif-display@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/dm-serif-display/-/dm-serif-display-0.2.3.tgz#aee6a1e6b858852deb361a7185f226c7da0b9ed5"
+  integrity sha512-RdhKvpjCFg05q9S1z4S2+mdxr3QPjNjsgFT8pUVF8w2iP+l4HYkywxLC2gGH35LxL0jncdGhCAM1eTpK5qaP7A==
+
+"@expo-google-fonts/poppins@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/poppins/-/poppins-0.2.3.tgz#807fc1bf58948c32ddfb9c67f7329ff16cc78d14"
+  integrity sha512-PXkur1ZY/puy1PwVFYPJx8qiI3dtBzC2ig1bo53swCt7/sI7krCGYRO6hLBNp15M0kcNh2J4cCR9ZQyFxsving==
+
 "@expo/bunyan@^4.0.0":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.1.tgz#ab9e17e36c71c704a0ce72168378a487368da736"
@@ -2983,6 +2998,13 @@ expo-modules-core@1.12.26:
   integrity sha512-y8yDWjOi+rQRdO+HY+LnUlz8qzHerUaw/LUjKPU/mX8PRXP4UUPEEp5fjAwBU44xjNmYSHWZDwet4IBBE+yQUA==
   dependencies:
     invariant "^2.2.4"
+
+expo-splash-screen@~0.27.7:
+  version "0.27.7"
+  resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.27.7.tgz#52171be54d8c008880d928e802819d767fbd3c12"
+  integrity sha512-s+eGcG185878nixlrjhhLD6UDYrvoqBUaBkIEozBVWFg3pkdsKpONPiUAco4XR3h7I/9ODq4quN28RJLFO+s0Q==
+  dependencies:
+    "@expo/prebuild-config" "7.0.9"
 
 expo-status-bar@~1.12.1:
   version "1.12.1"
