@@ -10,10 +10,10 @@ export const Container = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-bottom: ${RFValue(6)}px;
+    margin-bottom: ${RFValue(16)}px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 
-    background-color: ${theme.COLORS.GRAY6};
+    background-color: ${theme.COLORS.BLUE};
 `;
 export const IconGoogle = styled.Image`
     width: ${RFValue(25)}px;
@@ -23,4 +23,5 @@ export const Title = styled.Text`
     font-size: ${RFValue(17)}px;
     font-family: ${theme.FONTS.POPPINSLIGHT};
     margin-left: ${RFValue(10)}px;
+    color: ${theme.COLORS.WHITE};
 `;

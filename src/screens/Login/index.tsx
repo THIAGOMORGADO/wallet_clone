@@ -11,6 +11,7 @@ import {
 } from "./styles";
 import { SafeAreaView, Text } from "react-native";
 import { ButtonSocialGoogle } from "@src/components/ButtonSocialGoogle";
+import { FacebookButton } from "@src/components/ButtonSocialFace";
 
 export default function Login() {
     return (
@@ -21,7 +22,7 @@ export default function Login() {
                     <Description>Entra com rede sociais</Description>
                     <ViewButton>
                         <ButtonSocialGoogle title="Google" />
-                        <ButtonSocialGoogle title="Google" />
+                        <FacebookButton title="Facebook" icon="facebook" />
                     </ViewButton>
                 </ContentHeader>
 

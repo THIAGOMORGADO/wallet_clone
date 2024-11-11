@@ -1,23 +1,25 @@
 import React from "react";
 
-import { Container, IconGoogle, Title } from "./styles";
-import GoogleIcon from "../../assets/google.png";
+import { Container, Title } from "./styles";
+import { Feather } from "@expo/vector-icons";
 import type { TouchableOpacityProps } from "react-native-gesture-handler";
 
-interface ButtonSocialGoogleProps extends TouchableOpacityProps {
+interface ButtonSocialFacebookProps extends TouchableOpacityProps {
     title: string;
+    icon: keyof typeof Feather.glyphMap;
 }
 
-const ButtonSocialGoogle: React.FC<ButtonSocialGoogleProps> = ({
+const FacebookButton: React.FC<ButtonSocialFacebookProps> = ({
     title,
+    icon,
     ...rest
 }) => {
     return (
         <Container {...rest}>
-            <IconGoogle source={GoogleIcon} resizeMode="cover" />
+            <Feather name={icon} size={24} color="white" />
             <Title>{title}</Title>
         </Container>
     );
 };
 
-export { ButtonSocialGoogle };
+export { FacebookButton };
