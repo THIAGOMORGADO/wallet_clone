@@ -1,12 +1,21 @@
 import React from "react";
 
-import { Container } from "./styles";
-import { Text } from "react-native";
+import { Container, IconGoogle, Title } from "./styles";
+import GoogleIcon from "../../assets/google.png";
+import type { TouchableOpacityProps } from "react-native-gesture-handler";
 
-const ButtonSocialGoogle: React.FC = () => {
+interface ButtonSocialGoogleProps extends TouchableOpacityProps {
+    title: string;
+}
+
+const ButtonSocialGoogle: React.FC<ButtonSocialGoogleProps> = ({
+    title,
+    ...rest
+}) => {
     return (
-        <Container>
-            <Text>Button</Text>
+        <Container {...rest}>
+            <IconGoogle source={GoogleIcon} resizeMode="cover" />
+            <Title>{title}</Title>
         </Container>
     );
 };

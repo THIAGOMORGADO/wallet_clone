@@ -20,7 +20,7 @@ export default function Login() {
                     <Title>Seja Bem Vindo(a) {"\n"} a App de Cateira</Title>
                     <Description>Entra com rede sociais</Description>
                     <ViewButton>
-                        <ButtonSocialGoogle />
+                        <ButtonSocialGoogle title="Google" />
                     </ViewButton>
                 </ContentHeader>
 
