@@ -15,9 +15,13 @@ export const Description = styled.Text`
     margin-top: ${RFValue(40)}px;
     font-size: ${RFValue(15)}px;
     font-family: ${theme.FONTS.POPPINSLIGHT};
+    margin-bottom: ${RFValue(15)}px;
 `;
 
-export const ViewButton = styled.View``;
+export const ViewButton = styled.View`
+    flex-direction: row;
+    gap: ${RFValue(10)}px;
+`;
 
 export const ContentHeader = styled.View`
     padding: ${RFValue(20)}px;

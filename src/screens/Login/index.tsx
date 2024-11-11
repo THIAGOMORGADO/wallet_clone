@@ -21,6 +21,7 @@ export default function Login() {
                     <Description>Entra com rede sociais</Description>
                     <ViewButton>
                         <ButtonSocialGoogle title="Google" />
+                        <ButtonSocialGoogle title="Google" />
                     </ViewButton>
                 </ContentHeader>
 
