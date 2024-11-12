@@ -1,3 +1,4 @@
+import { FontAwesome6 } from "@expo/vector-icons";
 import styled from "styled-components/native";
 
 import { RFValue } from "react-native-responsive-fontsize";
@@ -15,10 +16,11 @@ export const Container = styled.TouchableOpacity`
 
     background-color: ${theme.COLORS.BLUE};
 `;
-export const IconGoogle = styled.Image`
-    width: ${RFValue(25)}px;
-    height: ${RFValue(25)}px;
+export const FaceboookIcon = styled(FontAwesome6)`
+    font-size: ${RFValue(25)}px;
+    color: ${theme.COLORS.WHITE};
 `;
+
 export const Title = styled.Text`
     font-size: ${RFValue(17)}px;
     font-family: ${theme.FONTS.POPPINSLIGHT};
